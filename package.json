@@ -12,7 +12,8 @@
   },
   "devDependencies": {
     "@stencil/core": "^1.13.0",
-    "@stencil/router": "^1.0.1"
+    "@stencil/router": "^1.0.1",
+    "@types/chrome": "0.0.114"
   },
   "license": "MIT"
 }
