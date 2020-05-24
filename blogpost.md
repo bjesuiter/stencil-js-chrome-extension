@@ -16,3 +16,5 @@ Problems when using bigger things, like ionic & angular
 - init this project with `npm init stencil`
 - init git repo inside this project with `git init`
 - update dependencies, esp. stencil core
+- update manifest to chrome extension manifest (previous manifest is only valid when used as PWA)
+- add src/assets/chrome/background.js file for background script (TODO: enable proper ts compilation later)
