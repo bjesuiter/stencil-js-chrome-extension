@@ -1,13 +1,32 @@
 {
-  "name": "Stencil Starter",
-  "short_name": "Stencil",
-  "start_url": "/",
-  "display": "standalone",
-  "icons": [{
-    "src": "assets/icon/icon.png",
-    "sizes": "512x512",
-    "type": "image/png"
-  }],
-  "background_color": "#16161d",
-  "theme_color": "#16161d"
+	"name": "Stencil JS Chrome Extension",
+	"homepage_url": "https://github.com/bjesuiter/stencil-js-chrome-extension",
+	"description": "A project for experimenting with stencil web components for chrome extension development",
+	"icons": {
+		"16": "assets/icon/icon_16.png",
+		"32": "assets/icon/icon_32.png",
+		"48": "assets/icon/icon_48x48.png",
+		"56": "assets/icon/icon_56x56.png",
+		"64": "assets/icon/icon_64x64.png",
+		"128": "assets/icon/icon_128x128.png",
+		"256": "assets/icon/icon_256x256.png",
+		"512": "assets/icon/icon_512x512.png"
+	},
+	"background": {
+		"scripts": ["chrome/background.ts"],
+		"persistent": true
+	},
+	"browser_action": {
+		"default_icon": {
+      "16": "assets/icon/icon_16.png",
+      "32": "assets/icon/icon_32.png"
+		},
+		"default_title": "Stencil JS Chrome Extension"
+	},
+	"options_page": "pages/options/options.html",
+	"web_accessible_resources": [
+		"assets/icon/*.png"
+	],
+	"permissions": ["bookmarks", "notifications", "storage", "tabs"],
+	"content_security_policy": "script-src 'self' 'unsafe-eval' https://cdn.jsdelivr.net; object-src 'self'"
 }
