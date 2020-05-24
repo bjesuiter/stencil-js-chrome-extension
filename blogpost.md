@@ -15,3 +15,4 @@ Problems when using bigger things, like ionic & angular
 
 - init this project with `npm init stencil`
 - init git repo inside this project with `git init`
+- update dependencies, esp. stencil core
